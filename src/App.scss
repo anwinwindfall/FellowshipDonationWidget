@@ -1,6 +1,5 @@
-.cms-react-boilerplate__container {
+.swf-donation {
   text-align: center;
-  background-color: #282c34;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,3 +7,28 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+/* Reset default properties for HTML tags */
+body, html, p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, img, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Additional resets for specific elements */
+body {
+  line-height: 1;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+/* Reset default properties for HTML tags */
+

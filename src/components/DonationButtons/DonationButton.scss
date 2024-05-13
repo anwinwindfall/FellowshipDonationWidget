@@ -1,0 +1,21 @@
+.donation-btn {
+    border: 1px solid #6D9DAD;
+    border-radius: 10px;
+    padding: 17px 39px;
+    cursor: pointer;
+    @media only screen and (max-width:500px) {
+        padding: 17px;
+    }
+    &:hover{
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(123, 193, 233, 0.5) 100%);
+        box-shadow: 0px 2px 4px 0px #0000004D inset;
+    }
+    & p.donation-values {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.78px;
+        text-align: center;
+        color: #213766;
+    }
+}
