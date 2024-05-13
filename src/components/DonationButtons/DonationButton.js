@@ -1,10 +1,10 @@
 import React from 'react'
 import './DonationButton.scss';
 
-const DonationButton = () => {
+const DonationButton = ({buttonName, buttonValue, amount, onClick}) => {
   return (
-    <div className='donation-btn'>
-      <p className='donation-values'>$10</p>
+    <div className={`donation-btn ${buttonValue==amount&&'btn-active'}`} onClick={()=>onClick(buttonValue)}>
+      <p className='donation-values'>{buttonName}</p>
     </div>
   )
 }

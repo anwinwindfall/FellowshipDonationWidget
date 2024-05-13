@@ -1,122 +1,116 @@
 [
   {
-   "type": "group",
-   "id": "199979ae-a061-3c23-24b8-37cc7a11c824",
-   "label": "Button settings",
-   "children": [
-    {
-     "type": "text",
-     "id": "695c9de3-a2b4-4b05-fd49-bb30c4506bee",
-     "validation_regex": "",
-     "label": "Button 1 Text",
-     "name": "button_1_text"
-    },
-    {
-     "type": "number",
-     "id": "fa49f18e-5d35-a281-6fc7-c51d4c46368c",
-     "display": "text",
-     "step": 1,
-     "label": "Button 1 value",
-     "name": "button_1_value"
-    },
-    {
-     "type": "text",
-     "validation_regex": "",
-     "label": "Button 2 Text",
-     "name": "button_2_text",
-     "oldId": "695c9de3-a2b4-4b05-fd49-bb30c4506bee",
-     "id": "f1c20e81-8d50-ad9f-147c-ddbbfb21df98"
-    },
-    {
-     "type": "number",
-     "display": "text",
-     "step": 1,
-     "label": "Button 2 value",
-     "name": "button_2_value",
-     "oldId": "fa49f18e-5d35-a281-6fc7-c51d4c46368c",
-     "id": "363f9258-6536-c241-d8e3-c7d791c3f520"
-    },
-    {
-     "type": "text",
-     "validation_regex": "",
-     "label": "Button 3 Text",
-     "name": "button_3_text",
-     "oldId": "f1c20e81-8d50-ad9f-147c-ddbbfb21df98",
-     "id": "1cecd546-ff00-e3b6-e2b5-d2ebc7ac68f4"
-    },
-    {
-     "type": "number",
-     "display": "text",
-     "step": 1,
-     "label": "Button 3 value",
-     "name": "button_3_value",
-     "oldId": "363f9258-6536-c241-d8e3-c7d791c3f520",
-     "id": "a569d82e-d8de-d6bf-e752-4d660a5c9177"
-    },
-    {
-     "type": "text",
-     "validation_regex": "",
-     "label": "Button 4 Text",
-     "name": "button_4_text",
-     "oldId": "1cecd546-ff00-e3b6-e2b5-d2ebc7ac68f4",
-     "id": "70ef7d2e-adba-6e13-ef22-dbe4413c9889"
-    },
-    {
-     "type": "number",
-     "display": "text",
-     "step": 1,
-     "label": "Button 4 value",
-     "name": "button_4_value",
-     "oldId": "a569d82e-d8de-d6bf-e752-4d660a5c9177",
-     "id": "5b9276ae-f209-4bbc-b28b-73c619b46f8a"
-    },
-    {
-     "type": "text",
-     "validation_regex": "",
-     "label": "Button 5 Text",
-     "name": "button_5_text",
-     "oldId": "70ef7d2e-adba-6e13-ef22-dbe4413c9889",
-     "id": "08393a04-90f5-9327-e514-663704009aa8"
-    },
-    {
-     "type": "number",
-     "display": "text",
-     "step": 1,
-     "label": "Button 5 value",
-     "name": "button_5_value",
-     "oldId": "5b9276ae-f209-4bbc-b28b-73c619b46f8a",
-     "id": "81870401-4467-39cf-d1f7-a97d9e0e28c1"
-    },
-    {
-     "type": "text",
-     "validation_regex": "",
-     "label": "Button 6 Text",
-     "name": "button_6_text",
-     "oldId": "08393a04-90f5-9327-e514-663704009aa8",
-     "id": "88edf5ad-ec9c-d133-509e-0191b2105b7c"
-    },
-    {
-     "type": "number",
-     "display": "text",
-     "step": 1,
-     "label": "Button 6 value",
-     "name": "button_6_value",
-     "oldId": "81870401-4467-39cf-d1f7-a97d9e0e28c1",
-     "id": "e033bfd6-d336-d968-99d2-279b22d07172"
-    }
-   ],
-   "name": "button_settings",
-   "default": {}
+   "type": "text",
+   "id": "62918449-7ce3-0ec5-8f9b-1303609eca46",
+   "validation_regex": "",
+   "label": "Product ID",
+   "name": "product_id"
   },
   {
-   "type": "color",
-   "id": "df5d8ae3-361c-7cdf-898e-cea892a54bcc",
+   "type": "text",
+   "validation_regex": "",
+   "label": "Plan ID",
+   "name": "plan_id",
+   "oldId": "62918449-7ce3-0ec5-8f9b-1303609eca46",
+   "id": "d158b1e7-a983-e7c7-fd99-bf65e7aec04f"
+  },
+  {
+   "children": [
+    {
+     "type": "group",
+     "id": "82e9b463-6c53-1fbc-e14a-ef98d38fefd1",
+     "label": "Button name",
+     "children": [
+      {
+       "type": "text",
+       "id": "09cc40eb-96ec-f088-9dc7-8731630228db",
+       "validation_regex": "",
+       "label": "Button Name",
+       "name": "button_name"
+      },
+      {
+       "type": "number",
+       "id": "39b2b667-444e-9760-7b7e-970c97dd9ac0",
+       "display": "text",
+       "step": 1,
+       "label": "Button Value",
+       "name": "button_value"
+      }
+     ],
+     "name": "button_properties",
+     "default": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+     ],
+     "occurrence": {
+      "min": 6,
+      "max": 6,
+      "default": 6
+     }
+    },
+    {
+     "type": "number",
+     "id": "639f3baa-830a-d661-2e4b-5af904d0affb",
+     "display": "text",
+     "step": 1,
+     "label": "Minimum Amount",
+     "name": "minimum_amount",
+     "default": 1
+    }
+   ],
+   "default": {
+    "button_properties": [
+     {},
+     {},
+     {},
+     {},
+     {},
+     {}
+    ],
+    "minimum_amount": 1
+   },
+   "display_width": null,
+   "expanded": false,
+   "group_occurrence_meta": null,
+   "id": "199979ae-a061-3c23-24b8-37cc7a11c824",
+   "label": "Button settings",
+   "locked": false,
+   "name": "button_settings",
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  },
+  {
+   "type": "text",
+   "id": "a4834509-1e6f-bed0-9241-801b5abf0295",
+   "validation_regex": "",
+   "label": "Currency Code",
+   "name": "currency_code",
+   "default": "USD"
+  },
+  {
+   "type": "text",
+   "id": "3586d65d-990f-c4ea-0a28-f930b2aca1cb",
+   "validation_regex": "",
+   "label": "Cart URL",
+   "name": "cart_url"
+  },
+  {
    "default": {
     "color": "#F1C962",
     "opacity": 100
    },
+   "display_width": null,
+   "id": "df5d8ae3-361c-7cdf-898e-cea892a54bcc",
    "label": "Donate Button Color",
+   "locked": false,
    "name": "donate_button_color",
-   "show_opacity": true
+   "required": false,
+   "show_opacity": true,
+   "type": "color"
   }
  ]

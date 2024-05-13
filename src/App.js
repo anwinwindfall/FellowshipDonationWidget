@@ -8,8 +8,7 @@ function App({ moduleData }) {
   return (
     <div className="swf-donation">
       {console.log(moduleData)}
-      {/* <p>Test 2.2</p> */}
-      <Widget/>
+      <Widget productId={moduleData.product_id} planId={moduleData.plan_id} buttonSettings={moduleData.button_settings} submitBtnColor={moduleData.donate_button_color.css} currencyCode={moduleData.currencyCode} cart={moduleData.cart_url}/>
     </div>
   );
 }   
