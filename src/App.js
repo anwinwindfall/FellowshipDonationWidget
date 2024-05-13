@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import Widget from './components/Widget/Widget';
 
 function App({ moduleData }) {
   
@@ -7,7 +8,8 @@ function App({ moduleData }) {
   return (
     <div className="swf-donation">
       {console.log(moduleData)}
-      <p>Test 2</p>
+      {/* <p>Test 2.2</p> */}
+      <Widget/>
     </div>
   );
 }   
