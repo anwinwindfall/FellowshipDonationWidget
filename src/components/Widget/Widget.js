@@ -52,7 +52,7 @@ const Widget = ({productId,planId,buttonSettings, submitBtnColor, currencyCode, 
         <p style={!errMsg ? { visibility: 'hidden' } : {}} className='error-msg'>{errMsg}</p>
       </div>
       <button style={{backgroundColor:submitBtnColor}} className='donate-month' onClick={()=>handleSubmit()}>
-        <p>Donate Monthly</p>
+        <p>{submitBtnText}</p>
       </button>
     </div>
   )
