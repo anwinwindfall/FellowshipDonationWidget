@@ -3,7 +3,7 @@ import './Widget.scss'
 import DonationButton from '../DonationButtons/DonationButton'
 import { BASEURL } from '../URL/BaseURL'
 
-const Widget = ({productId,planId,buttonSettings, submitBtnColor, currencyCode, cart}) => {
+const Widget = ({productId,planId,buttonSettings, submitBtnColor, currencyCode, cart, submitBtnText}) => {
   const [amount, setAmount]=useState("")
   const [errMsg, setErrMsg]=useState("")
   function onClick(value){
@@ -52,7 +52,7 @@ const Widget = ({productId,planId,buttonSettings, submitBtnColor, currencyCode, 
         <p style={!errMsg ? { visibility: 'hidden' } : {}} className='error-msg'>{errMsg}</p>
       </div>
       <button style={{backgroundColor:submitBtnColor}} className='donate-month' onClick={()=>handleSubmit()}>
-        <p>Donate Monthly</p>
+        <p>{submitBtnText}</p>
       </button>
     </div>
   )
