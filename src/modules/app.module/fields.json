@@ -111,12 +111,17 @@
    "type": "group"
   },
   {
-   "type": "text",
+   "allow_new_line": false,
+   "default": "Donate Monthly",
+   "display_width": null,
    "id": "347ae0eb-ba4d-89f8-d5f2-3f1230b4528a",
-   "validation_regex": "",
    "label": "Submit Button Text",
+   "locked": false,
    "name": "submit_button_text",
-   "default": "Donate Monthly"
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
   },
   {
    "allow_new_line": false,
@@ -156,5 +161,12 @@
    "required": false,
    "show_opacity": true,
    "type": "color"
+  },
+  {
+   "type": "richtext",
+   "id": "7f2e3f09-71b7-296e-51c5-d20fa785ef81",
+   "label": "content",
+   "name": "content",
+   "default": "Content Here"
   }
  ]
