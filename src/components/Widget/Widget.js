@@ -3,7 +3,7 @@ import './Widget.scss'
 import DonationButton from '../DonationButtons/DonationButton'
 import { BASEURL } from '../URL/BaseURL'
 
-const Widget = ({productId,planId,buttonSettings, submitBtnColor, currencyCode, cart}) => {
+const Widget = ({productId,planId,buttonSettings, submitBtnColor, currencyCode, cart, submitBtnText}) => {
   const [amount, setAmount]=useState("")
   const [errMsg, setErrMsg]=useState("")
   function onClick(value){
