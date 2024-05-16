@@ -3,10 +3,16 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   font-size: calc(10px + 2vmin);
   color: white;
   width: 100%;
+  max-width: 1534px;
+  margin: 0 auto;
+ @media only screen and (max-width: 1024px){
+   flex-direction: column;
+   text-align: center;
+ }
 }
 /* Reset default properties for HTML tags */
 body, html, p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, img, a {
