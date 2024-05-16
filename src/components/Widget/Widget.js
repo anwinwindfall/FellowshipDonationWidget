@@ -13,12 +13,15 @@ const Widget = ({productId,planId,buttonSettings, submitBtnColor, currencyCode, 
   function handleInput(value){
     setErrMsg("")
     setAmount(value)
-    if (value<buttonSettings.minimum_amount) {
+    if(value==""||value==0){
+      setErrMsg('Invalid amount!')
+    }
+    else if (value<buttonSettings.minimum_amount) {
       setErrMsg(`Minimum amount is ${buttonSettings.minimum_amount}`)
     }
     else if(value>100000){
-      setError('Invalid amount!')
-    }
+      setErrMsg('Invalid amount!')
+    } 
   }
 
   function handleSubmit(){
