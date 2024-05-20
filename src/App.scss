@@ -12,30 +12,32 @@
  @media only screen and (max-width: 1024px){
    flex-direction: column;
    text-align: center;
+   p{
+    padding: 0;
+    margin: 0;
+   }
  }
+//  p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, img, a {
+//   margin: 0;
+//   padding: 0;
+//   border: 0;
+//   font-size: 100%;
+//   font: inherit;
+//   vertical-align: baseline;
+// }
+
+// /* Additional resets for specific elements */
+
+// ul, ol {
+//   list-style: none;
+// }
+
+// button {
+//   background: transparent;
+//   cursor: pointer;
+// }
 }
 /* Reset default properties for HTML tags */
-body, html, p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, img, a {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
 
-/* Additional resets for specific elements */
-body {
-  line-height: 1;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-button {
-  background: transparent;
-  cursor: pointer;
-}
 /* Reset default properties for HTML tags */
 

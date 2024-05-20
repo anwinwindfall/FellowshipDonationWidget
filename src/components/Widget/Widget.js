@@ -25,12 +25,12 @@ const Widget = ({productId,planId,buttonSettings, submitBtnColor, currencyCode, 
   }
 
   function handleSubmit(){
-    if (amount!=''&&amount>buttonSettings.minimum_amount) {
+    if (!errMsg&&amount!=''&&amount>buttonSettings.minimum_amount) {
       const url= new URL(`${BASEURL}${planId}/product/${productId}?charge_quantity=${amount}&currency=${currencyCode}&hide_currency=true&cart=${cart}`);
       window.location.href=url;
     }
     else if(amount==''){
-      setErrMsg('Select an amount')
+      setErrMsg('Choose an amount')
     }
   }
   return (
