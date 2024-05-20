@@ -12,10 +12,10 @@
  @media only screen and (max-width: 1024px){
    flex-direction: column;
    text-align: center;
-   p{
-    padding: 0;
-    margin: 0;
-   }
+ }
+ p{
+  padding: 0 !important;
+  margin: 0 !important;
  }
 //  p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, img, a {
 //   margin: 0;
